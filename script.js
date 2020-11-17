@@ -1,92 +1,99 @@
 //1
 
-let num = 3;
-console.log (`Task 1: num = ${num}`);
+const numForTask1 = 3;
+console.log (`Task 1: ${numForTask1}`);
 
 
 //2
 
-let a = 10;
-let b = 2;
-console.log (`Task 2.1: a + b = ${a+b}`);
-console.log (`Task 2.2: a - b = ${a-b}`);
-console.log (`Task 2.3: a * b = ${a*b}`);
-console.log (`Task 2.4: a / b = ${a/b}`);
+const firstNumForTask2 = 10;
+const secondNumForTask2 = 2;
+const sumForTask2 = firstNumForTask2 + secondNumForTask2;
+const differenceForTask2 = firstNumForTask2 - secondNumForTask2;
+const multiplicationForTask2 = firstNumForTask2 * secondNumForTask2;
+const divisionForTask2 = firstNumForTask2 / secondNumForTask2;
+console.log (`Task 2.1: ${sumForTask2}`);
+console.log (`Task 2.2: ${differenceForTask2}`);
+console.log (`Task 2.3: ${multiplicationForTask2}`);
+console.log (`Task 2.4: ${divisionForTask2}`);
 
 
 //3
 
-let c = 15;
-let d = 2;
-let result = c+d
-console.log (`Task 3: result = ${result}`);
+const firstNumForTask3 = 15;
+const secondNumForTask3 = 2;
+const resultForTask3 = firstNumForTask3 + secondNumForTask3;
+console.log (`Task 3: ${resultForTask3}`);
 
 
 //4
 
-a = 10;
-b = 2;
-c = 5;
-console.log (`Task 4: a + b + c = ${a+b+c}`);
+const firstNumForTask4 = 10;
+const secondNumForTask4 = 2;
+const thirdNumForTask4 = 5;
+const sumForTask4 = firstNumForTask4 + secondNumForTask4 + thirdNumForTask4;
+console.log (`Task 4: ${sumForTask4}`);
 
 
 //5
 
-a = 17;
-b = 10;
-c = a-b;
-d = 7;
-result = c+d;
-console.log (`Task 5: c + d = ${c+d}`);
+const firstNumForTask5 = 17;
+const secondNumForTask5 = 10;
+const thirdNumForTask5 = firstNumForTask5 - secondNumForTask5;
+const forthNumForTask5 = 7;
+const resultForTask5 = thirdNumForTask5 + forthNumForTask5;
+console.log (`Task 5: ${resultForTask5}`);
 
 
 //6
 
-let str = 'Привет, Мир!';
-console.log (`Task 6: ${str}`);
+const strForTask6 = 'Привет, Мир!';
+console.log (`Task 6: ${strForTask6}`);
 
 
 //7
 
-let str1 = 'Привет,';
-let str2 = 'Мир!';
-console.log ('Task' + ' ' + '7:' + ' ' + str1 + ' ' + str2);
+const str1Fortask6 = 'Привет,';
+const str2Fortask6 = 'Мир!';
+const resultForTask6 = str1Fortask6 + str2Fortask6;
+console.log (`Task 7: ${resultForTask6}`);
 
 
 //8
 
-let name = 'Дриго';
-console.log (`Task 8: Привет ${name}!`);
+const myName = 'Дриго';
+console.log (`Task 8: Привет ${myName}!`);
 
 
 //9
 
-let age = 24000;
-console.log (`Task 9: Мне ${age} лет!`);
+const myAge = 24000;
+console.log (`Task 9: Мне ${myAge} лет!`);
 
 
 //10
 
-a = 10;
-b = 3;
-console.log (`Task 10: Остаток от деления a на b = a%b = ${a%b}`);
+const firstNumForTask10 = 10;
+const secondNumForTask10 = 3;
+const resultForTask10 = 10 % 3;
+console.log (`Task 10: ${resultForTask10}`);
 
 
 //11
 
-let a1 = prompt ('Введите значение a');
-let b1 = prompt ('Введите значение b');
-
-if (a1 % b1 == 0) {
-    console.log (`Task 11.1: a делится на b без остатка`);
+const firstNumForTask11 = prompt ('Введите первое значение');
+const secondNumForTask11 = prompt ('Введите второе значение');
+const resultForTask11 = firstNumForTask11 % secondNumForTask11;
+if (resultForTask11 == 0) {
+    console.log (`Task 11.1: делится без остатка`);
 } else {
-    console.log (`Task 11.1: a делится на b с остатком (остаток = ${a1%b1})`);
+    console.log (`Task 11.1: делится с остатком (остаток = ${resultForTask11})`);
 }
 
-(a1 % b1 == 0) ? console.log (`Task 11.2: a делится на b без остатка`) : console.log (`Task 11.2: a делится на b с остатком (остаток = ${a1%b1})`);
+(resultForTask11 == 0) ? console.log (`Task 11.1: делится без остатка`) : console.log (`Task 11.1: делится с остатком (остаток = ${resultForTask11})`);
 
 
 
 //12
-let st = Math.pow (2, 10); 
-console.log (`Task 12: 2 в 10 степени = ${st}`);
+const st = 2 ** 10; 
+console.log (`Task 12: ${st}`);
