@@ -116,12 +116,17 @@ let day = date.getDay();
 
 for (let i9 = 0; i9 < arr9.length; i9++) {
     if (arr9[i9] == arr9[day]) {
-        console.log('%c%s','font-style: italic;', arr9[i9]);
+        formatDate(date)
+        console.log('%c%s','font-style: italic;', formatDate());
     } else {
         console.log(arr9[i9]);
     }
  }
 
+ function formatDate(date) {
+    let a = moment().format("DD MM YY");
+    return a;
+ }
 
   // Task 10
 
