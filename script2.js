@@ -111,10 +111,11 @@ for (let i8 = 0; i8 < arr8.length; i8++) {
 console.log('%cTask 9', 'color:green;');
 
 const arr9 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-let day = 'Saturday';
+let date = new Date();
+let day = date.getDay();
 
 for (let i9 = 0; i9 < arr9.length; i9++) {
-    if (arr9[i9] == day) {
+    if (arr9[i9] == arr9[day]) {
         console.log('%c%s','font-style: italic;', arr9[i9]);
     } else {
         console.log(arr9[i9]);
