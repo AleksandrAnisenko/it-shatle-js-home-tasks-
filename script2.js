@@ -10,7 +10,7 @@ console.log([1] > null);  // ([1] == 1) > (null == 0) ----- true;
 console.log('foo' + +'bar');  // 'foo' + (+'bar' == NaN) == 'fooNaN';
 console.log('true' == true);  // ('true' == NaN) == (true == 1) ----- false;
 console.log(false == 'false');  // (false == 0) == ('false' == NaN) ----- false;
-console.log(null == '');  // (null == 0) == ('' == 0) ----- true, но это походу баг и правильно false , т.к. null == null/indefined
+console.log(null == '');  // (null == 0) == ('' == 0) ----- false , т.к. null == null/indefined
 console.log(!!'false' == !!'true');  // (!!'false' == 1) ==  (!!'true' == 1) ----- true
 console.log(['x'] == 'x');  // (['x'] == 'x') == 'x' ----- true
 console.log([] + null + 1);  // (([] == '') + null == 'null') + 1 == 'null1'
