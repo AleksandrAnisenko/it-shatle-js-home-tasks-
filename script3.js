@@ -15,8 +15,8 @@ console.log(result1);
 console.log('%cTask 2', 'color:yellow;');
 
 let arrStr2 = ['a', 'b', 'c'];
-
-console.log(arrStr2.concat(1, 2, 3));
+arrStr2.push(1,2,3);
+console.log(arrStr2);
 
 
 // Task 3
@@ -54,10 +54,10 @@ console.log(result5);
 console.log('%cTask 6', 'color:yellow;');
 
 let frontEnd = {
-        js:'test',
-        jq: 'hello', 
-        css: 'world'
-    },
+    js: 'test',
+    jq: 'hello',
+    css: 'world'
+},
     result6 = Object.keys(frontEnd);
 
 console.log(result6);
@@ -76,7 +76,7 @@ console.log(customReverse(arrNum7));
 function customReverse(arr) {
     let newArr = [];
 
-    arr.forEach( item => {
+    arr.forEach(item => {
         newArr.unshift(item);
     });
 
@@ -92,9 +92,9 @@ let arrNum8 = [[1, 2, 3], [4, 5], [6]];
 
 function sumArr8(array) {
     let sum8 = 0;
-    array.forEach( (item) => {
+    array.forEach((item) => {
         item.forEach((item) => {
-            sum8+= item;
+            sum8 += item;
         });
     });
     return sum8;
@@ -114,7 +114,7 @@ function sumArr9(array) {
     array.forEach(item => {
         item.forEach(item => {
             item.forEach(item => {
-                sum9+= item;
+                sum9 += item;
             });
         });
     });
@@ -133,23 +133,20 @@ let arrNum10 = [1, 2, 3],
     arrayNum10 = [1, 3, 5];
 
 function arrComparison(arr1, arr2) {
-    let result10 = true;
     if (arr1.length == arr2.length) {
         for (i = 0; i < arr1.length; i++) {
-            if (arr1[i] == arr2[i] && result10 == true) {
-                if (i == arr1.length - 1 ) {
-                    break;
+            if (arr1[i] == arr2[i]) {
+                if (i == arr1.length - 1) {
+                    return true;
                 };
                 continue;
             } else {
-                result10 = false;
-            }
-        }
+                return false;
+            };
+        };
     } else {
-        result10 = false;
+        return false;
     }
-
-    return result10;
 }
 
 
@@ -165,7 +162,7 @@ console.log('%cTask 11', 'color:yellow;');
 let arrNum11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     arrNumNew11 = arrNum11.map(item => item ** 2);
 
-    console.log(arrNumNew11);
+console.log(arrNumNew11);
 
 
 // Task 12
@@ -175,7 +172,7 @@ console.log('%cTask 12', 'color:yellow;');
 let arrNum12 = [0, -1, 2, -3, 4, -5, 6, -7, 8, -9, 10],
     arrNumNew12 = arrNum12.filter(item => item < 0);
 
-    console.log(arrNumNew12);    
+console.log(arrNumNew12);
 
 
 // Task 13
@@ -185,9 +182,9 @@ console.log('%cTask 13', 'color:yellow;');
 let arrNum13 = [0, -1, 2, -3, 4, -5, 6, -7, 8, -9, 10],
     result13 = arrNum13.reduce((sum, current) => {
         return sum + current;
-      });
+    });
 
-    console.log(result13); 
+console.log(result13);
 
 
 // Task 14
@@ -206,10 +203,10 @@ console.log(city1);
 console.log(city2);
 
 
-city1.getName = function() {
+city1.getName = function () {
     return this.name;
 };
-city2.getName = function() {
+city2.getName = function () {
     return this.name;
 };
 
@@ -217,10 +214,10 @@ console.log(city1.getName());
 console.log(city2.getName());
 
 
-city1.exportStr = function() {
+city1.exportStr = function () {
     return `name = ${this.name} population = ${this.population}`;
 };
-city2.exportStr = function() {
+city2.exportStr = function () {
     return `name = ${this.name} population = ${this.population}`;
 };
 
@@ -237,7 +234,7 @@ console.log(formatDate15(date15));
 function formatDate15(date) {
     let a = moment().format("YY MM DD");
     return a;
- }
+}
 
 
 // Task 16
@@ -245,6 +242,6 @@ function formatDate15(date) {
 console.log('%cTask 16', 'color:yellow;');
 
 let date16 = new Date();
-let b = date16.getTime()
-
-console.log(moment(b).format('mm'));
+let minutes = (date16.getTime() / 1000 / 60);
+console.log(date16.getTime());
+console.log(minutes);
