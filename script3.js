@@ -243,5 +243,34 @@ console.log('%cTask 16', 'color:yellow;');
 
 let date16 = new Date();
 let minutes = (date16.getTime() / 1000 / 60);
-console.log(date16.getTime());
+console.log(`day: ${date16.getDate()}`);
+console.log(`month: ${date16.getMonth()}`);
+console.log(`Year: ${date16.getFullYear()}`);
 console.log(minutes);
+
+
+
+// Task min
+
+console.log('%cTask min', 'color:yellow;');
+
+
+const firstNum = 4;
+const secondNum = -3;
+function min(value1, value2) {
+    return (value1 < value2) ?  value1 : value2; 
+};
+console.log(min(firstNum,secondNum));
+
+
+// Task siEven
+
+console.log('%cTask isEven', 'color:yellow;');
+
+const myNum = 50;
+
+function isEven(a) {
+    return a%2 == 0;
+}
+
+console.log(isEven(myNum));
