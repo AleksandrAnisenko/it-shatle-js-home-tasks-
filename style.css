@@ -1,0 +1,24 @@
+.task_space {
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    width: 100%;
+    color: rgb(80, 109, 22);
+    background-color: tomato;
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task4 {
+    height: 100px;
+    width: 300px;
+    border: 1px solid red;
+}
