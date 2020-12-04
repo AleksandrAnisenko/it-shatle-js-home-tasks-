@@ -1,3 +1,17 @@
+// Task 1
+let but1 = document.querySelector('but1');
+console.log(but1);
+but1.addEventListener('click',function(){
+    alert('Привет!');
+});
+
+
+// Task 1
+let but2 = document.getElementById('but');
+but2.addEventListener('mouseover',function(){
+    alert('Привет!');
+});
+
 // Task 5
 function valueAlert5() {
     let value5 = document.getElementById('task5');
